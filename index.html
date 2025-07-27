@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RR Mobile</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="navbar">
+      <div class="logo">RR Mobile</div><div class="contact"><a href="#" id="referLink">
+  Refer & Win!</a>
+</div>
+    </div>
+  </header>
+
+  <!-- HERO IMAGE SLIDER -->
+  <section class="hero-slider" id="heroSlider">
+    <div class="hero-slide active">
+      <img src="r/jio.png" />
+      <div class="hero-caption">🔥 1% OFF on Every Recharge!</div>
+    </div>
+    <div class="hero-slide">
+      <img src="r/refer.png" />
+      <div class="hero-caption">Refer & Earn Free Earphones!</div>
+    </div>
+    <div class="hero-slide">
+      <img src="r/free.png" />
+      <div class="hero-caption">Refer & Win!</div>
+    </div>
+    <button class="hero-nav left" aria-label="Previous">&#8592;</button>
+    <button class="hero-nav right" aria-label="Next">&#8594;</button>
+    <div class="hero-dots" id="heroDots"></div>
+  </section>
+
+  <!-- Icon Menu Carousel Wrapper -->
+  <div class="icon-menu-carousel-wrapper">
+    <button class="carousel-btn left" id="carouselLeft" aria-label="Previous">&#8592;</button>
+    <nav class="icon-menu-carousel" id="iconMenuCarousel" tabindex="0" aria-label="Main menu">
+      <ul class="icon-menu-list">
+        <li>
+          <a href="https://wa.me/918344448008">
+            <span class="menu-icon-block" style="background:linear-gradient(135deg, #69c3ff 70%, #2874f0 100%);">
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+                <rect width="36" height="36" rx="14" fill="none"/>
+                <path d="M18 27V25" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+                <rect x="10" y="7" width="16" height="22" rx="4" stroke="#fff" stroke-width="2"/>
+                <circle cx="18" cy="23" r="1" fill="#fff"/>
+              </svg>
+            </span>
+            <span class="menu-label">Mobile Recharge</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://wa.me/918344448008">
+            <span class="menu-icon-block" style="background:linear-gradient(135deg, #ffb86c 70%, #f57224 100%);">
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+                <circle cx="18" cy="18" r="13" stroke="#fff" stroke-width="2"/>
+                <rect x="15" y="26" width="6" height="4" rx="1" stroke="#fff" stroke-width="2" fill="none"/>
+                <rect x="17" y="18" width="2" height="6" rx="1" fill="#fff"/>
+              </svg>
+            </span>
+            <span class="menu-label">DTH Recharge</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://wa.me/918344448008">
+            <span class="menu-icon-block" style="background:linear-gradient(135deg, #74f5de 70%, #16c79a 100%);">
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+                <rect x="9" y="7" width="18" height="22" rx="4" stroke="#fff" stroke-width="2"/>
+                <rect x="13" y="11" width="10" height="2" rx="1" fill="#fff"/>
+                <rect x="13" y="16" width="10" height="2" rx="1" fill="#fff"/>
+                <rect x="13" y="21" width="6" height="2" rx="1" fill="#fff"/>
+              </svg>
+            </span>
+            <span class="menu-label">Bill Payments</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="menu-icon-block" style="background:linear-gradient(135deg, #fb7eba 70%, #d500f9 100%);">
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+                <rect x="8" y="14" width="20" height="12" rx="3" stroke="#fff" stroke-width="2"/>
+                <rect x="12" y="22" width="5" height="2" rx="1" fill="#fff"/>
+                <rect x="19" y="22" width="5" height="2" rx="1" fill="#fff"/>
+                <rect x="10" y="18" width="16" height="2" rx="1" fill="#fff"/>
+              </svg>
+            </span>
+            <span class="menu-label">AEPS</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="menu-icon-block" style="background:linear-gradient(135deg, #ffcb6b 70%, #ffd600 100%);">
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+                <rect x="10" y="14" width="16" height="8" rx="2" stroke="#fff" stroke-width="2"/>
+                <circle cx="18" cy="18" r="2" fill="#fff"/>
+                <rect x="13" y="21" width="10" height="2" rx="1" fill="#fff"/>
+              </svg>
+            </span>
+            <span class="menu-label">Money Transfer</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <button class="carousel-btn right" id="carouselRight" aria-label="Next">&#8594;</button>
+  </div>
+
+  <!-- Main Content -->
+  <main>
+    <h1>Our Mobile Accessories</h1>
+    <section id="products-grid" class="products-grid"></section>
+  </main>
+
+  <!-- About Us Section -->
+  <section class="aboutus-section" id="aboutus">
+    <h2>About Us</h2>
+    <p>
+      RR Mobile India is your trusted partner for high-quality mobile accessories like Bluetooth headphones, neckbands, charging cables, smart watches, wireless speakers, and more. We are committed to delivering the best products at competitive prices with excellent customer service.
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-links">
+      <a href="#aboutus" class="footer-link">About Us</a>
+      <a href="tel:8344448008" class="footer-link">Call</a>
+      <a href="mailto:rrmobileit@gmail.com" class="footer-link">Mail Us</a>
+      <a href="https://wa.me/918344448008" class="footer-link whatsapp-link" target="_blank" aria-label="WhatsApp">
+        <span class="wa-icon" aria-hidden="true"></span> WhatsApp
+      </a>
+    </div>
+    <p>© 2025 RR Mobile India. Contact: 8344448008</p>
+  </footer>
+
+  <!-- Pop-up Modal for Product Images -->
+  <div id="imageModal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="modalCaption" tabindex="-1">
+    <button class="modal-close" aria-label="Close">&times;</button>
+    <img class="modal-content" id="modalImage" alt="Product Image" />
+    <div id="modalCaption"></div>
+  </div>
+	<!-- Refer & Win Popup -->
+<div class="popup-overlay" id="referPopup" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="referPopupTitle" style="display:none;">
+  <div class="popup-content" role="document">
+  <button class="close-btn" id="closeReferPopup" aria-label="Close popup">&times;</button>
+  <h2 id="referPopupTitle">Welcome to Refer & Earn Program!</h2>
+  <p>In this program, for every successful referral where your friend purchases any item, you will get <b>one free wired earphone worth ₹199</b>!</p>
+  <p>Start referring now and earn great rewards.<br> For more details:</p>
+  <a href="https://chat.whatsapp.com/EiKWPdxKZoQBWuvTTVvzpU?mode=ac_t" target="_blank" rel="noopener noreferrer" class="join-group-btn">
+    Join WhatsApp Group
+  </a>
+</div>
+</div>
+
+  <script src="products.js"></script>
+</body>
+</html>
