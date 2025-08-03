@@ -535,3 +535,19 @@ footer {
     gap: 15px;
   }
 }
+.buy-now-btn {
+  margin-top: 12px;
+  background: linear-gradient(90deg, #25d366, #128c7e);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(37, 211, 102, 0.3);
+}
+.buy-now-btn:hover {
+  background: #1ebe5d;
+  transform: scale(1.05);
+}

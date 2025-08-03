@@ -92,7 +92,6 @@ function closeModal() {
   modal.setAttribute('aria-hidden', 'true');
 }
 
-// Render product cards
 function renderProducts() {
   const productsGrid = document.getElementById('products-grid');
   productsGrid.innerHTML = '';
@@ -101,6 +100,9 @@ function renderProducts() {
     const productCard = document.createElement('div');
     productCard.className = 'product-card';
 
+    const whatsappMessage = `Hello! I'm interested in buying *${product.title}* for ₹${product.price}. Please provide more details.`;
+    const whatsappURL = `https://wa.me/918344448008?text=${encodeURIComponent(whatsappMessage)}`;
+
     productCard.innerHTML = `
       <img src="${product.image}" alt="${product.title}" class="product-image" tabindex="0" />
       <div class="product-title">${product.title}</div>
@@ -108,6 +110,7 @@ function renderProducts() {
         <span class="price">₹${product.price}</span>
         <span class="old-price">₹${product.oldPrice}</span>
       </div>
+      <a href="${whatsappURL}" target="_blank" class="buy-now-btn" aria-label="Buy ${product.title} on WhatsApp">Buy Now</a>
     `;
 
     productsGrid.appendChild(productCard);
@@ -126,6 +129,7 @@ function renderProducts() {
     });
   });
 }
+
 
 // === Hero Slider Logic ===
 document.addEventListener('DOMContentLoaded', function() {
